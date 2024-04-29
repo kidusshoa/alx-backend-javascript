@@ -1,6 +1,3 @@
-/* changed the class2019 and class2020 declaration in to the HolbertonClass 
-   and re-fined the functions */ 
-
 export class HolbertonClass {
   constructor(year, location) {
     this._year = year;
@@ -36,13 +33,13 @@ export class StudentHolberton {
   }
 }
 
-const class2019 = new HolbertonClass(2019, 'San Francisco');
-const class2020 = new HolbertonClass(2020, 'San Francisco');
+const holbertonClass2019 = new HolbertonClass(2019, "San Francisco");
+const holbertonClass2020 = new HolbertonClass(2020, "San Francisco");
 
-const student1 = new StudentHolberton('Guillaume', 'Salva', class2020);
-const student2 = new StudentHolberton('John', 'Doe', class2020);
-const student3 = new StudentHolberton('Albert', 'Clinton', class2019);
-const student4 = new StudentHolberton('Donald', 'Bush', class2019);
-const student5 = new StudentHolberton('Jason', 'Sandler', class2019);
+const student1 = new StudentHolberton("Guillaume", "Salva", holbertonClass2020);
+const student2 = new StudentHolberton("John", "Doe", holbertonClass2020);
+const student3 = new StudentHolberton("Albert", "Clinton", holbertonClass2019);
+const student4 = new StudentHolberton("Donald", "Bush", holbertonClass2019);
+const student5 = new StudentHolberton("Jason", "Sandler", holbertonClass2019);
 
-export default [student1, student2, student3, student4, student5];
+export const students = [student1, student2, student3, student4, student5];
