@@ -1,12 +1,11 @@
 import AppController from '../controllers/AppController';
 import StudentsController from '../controllers/StudentsController';
 
-const routes = (app) => {
+const mapRoutes = (app) => {
   app.get('/', AppController.getHomepage);
   app.get('/students', StudentsController.getAllStudents);
   app.get('/students/:major', StudentsController.getAllStudentsByMajor);
 };
 
-export default routes;
-
-module.exports = routes;
+export default mapRoutes;
+module.exports = mapRoutes;
